@@ -15,3 +15,15 @@ document.querySelector("header").addEventListener("mousemove", (e) => {
     image.style.setProperty("--blur", `${blurValue}px`);
   }
 });
+
+setInterval(() => {
+  setTimeout(() => {
+    images[1].setAttribute('src', 'image/2-zha.png')
+    setTimeout(() => {
+      images[1].setAttribute('src', 'image/2-bi.png')
+      setTimeout(() => {
+        images[1].setAttribute('src', 'image/2.png')
+      }, 100)
+    }, 100)
+  }, 50)
+}, 3000)
